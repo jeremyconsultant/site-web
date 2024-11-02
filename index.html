@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Pereira Pires - Consultant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+   <!-- Header -->
+<header class="header-container">
+    <div class="logo">
+        <a href="#">
+            <img src="ton logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <!-- Primary navigation links (only show above 1000px) -->
+    <nav class="nav-links">
+        <a href="#profil">Profil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#etudes-de-cas">Études de Cas</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Social icons (only show above 1000px) -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Hamburger menu icon for mobile view (show below 1000px) -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Mobile menu for navigation and social icons (only show below 1000px) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="#profil">Profil</a>
+            <a href="#competences">Compétences</a>
+            <a href="#etudes-de-cas">Études de Cas</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="mobile-social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</header>
+    <!-- Main Content -->
+    <main class="page-container">
+        <section id="profil" class="section-container">
+            <h2>Profil</h2>
+            <div class="profile-content">
+                <img src="photo.png" alt="Photo de Jeremy Pereira Pires" class="profile-photo">
+                <div class="text-content">
+                    <p class="welcome-message">
+                        Bienvenue ! Je suis Jeremy Pereira Pires, consultant spécialisé en optimisation de processus. 
+                    </p>
+                    <p>
+                        Mon objectif : Transformer vos processus pour maximiser la performance et réduire les coûts tout en maintenant la qualité.
+                    </p>
+                    <h3>Mon approche :</h3>
+                    <ul class="approach-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Écoute et Diagnostic :</strong> Comprendre vos défis uniques.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Planification et Mise en Œuvre :</strong> Élaborer et exécuter des stratégies concrètes.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Suivi et Amélioration :</strong> Assurer un suivi rigoureux pour pérenniser les résultats.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section-container">
+            <h2>Compétences</h2>
+            <div class="competences">
+                <h3>Optimisation des Processus (Lean Six Sigma)</h3>
+                <p>Grâce à ma certification Lean Six Sigma, j’identifie et élimine les inefficacités au sein de vos processus...</p>
+                <h3>Analyse de Données (Google Analytics & Power BI)</h3>
+                <p>Les données sont essentielles pour orienter des décisions stratégiques...</p>
+                <h3>Conformité & Qualité (ISO 9001)</h3>
+                <p>En tant que consultant certifié ISO 9001, j’accompagne votre entreprise dans la mise en place de systèmes...</p>
+                <h3>Conformité Financière (AMF)</h3>
+                <p>Je propose une expertise en conformité avec la réglementation AMF pour les entreprises du secteur financier...</p>
+            </div>
+        </section>
+
+        <section id="etudes-de-cas" class="section-container">
+            <h2>Études de Cas</h2>
+            <div class="case-studies">
+                <h3>Optimisation de Processus pour une Entreprise de Logistique</h3>
+                <p>En appliquant la méthodologie Lean Six Sigma, j’ai analysé les flux de travail pour réduire les délais de livraison de 30 %...</p>
+                <h3>Mise en Place d’un Système de Reporting pour une Startup</h3>
+                <p>Avec Power BI et Google Analytics, j’ai créé des tableaux de bord sur mesure permettant un suivi en temps réel des KPIs clés...</p>
+                <h3>Conformité ISO 9001 pour une PME Industrielle</h3>
+                <p>En collaboration avec les équipes internes, j’ai mené un audit des processus pour obtenir la certification ISO 9001 en six mois...</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section-container">
+            <h2>Contact</h2>
+            <p>Je suis à votre disposition pour discuter de vos besoins en optimisation de processus...</p>
+            <div class="contact-info">
+                <p><strong>Téléphone / WhatsApp :</strong> <a href="tel:+33775747011" class="contact-button">07 75 74 70 11</a></p>
+                <p><strong>Email :</strong> <a href="mailto:jeremy.pereirapires@gmail.com" class="contact-button">jeremy.pereirapires@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

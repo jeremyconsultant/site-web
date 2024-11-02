@@ -1,0 +1,367 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+    background-color: #eeeeee;
+    color: #313131;
+    margin: 0;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fffffff7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 15px;
+    left: 15px; /* Espace de 15px à gauche */
+    right: 15px; /* Espace de 15px à droite */
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le header quand la largeur est inférieure à 1200px */
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Center Container */
+.center-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center; /* Centre les liens de navigation horizontalement */
+    flex: 1; /* Permet au conteneur de s'étendre pour occuper tout l'espace disponible */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #313131;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    justify-content: center; /* Centre le texte horizontalement */
+    height: 100%; /* S'assure que l'alignement soit complet */
+}
+
+.nav-links a:hover {
+    color: #c6d12f;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Définit un espacement de 15px entre les icônes, ajuste la valeur selon tes préférences */
+    font-size: 24px;
+    color: #000; /* Couleur noire pour les icônes */
+    transition: color 0.3s ease;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #000; /* Définit la couleur noire pour les icônes */
+    transition: color 0.3s ease;
+}
+
+/* Changement de couleur des icônes au survol */
+.social-icons a:hover {
+    color: #c6d12f; /* Remplace par la couleur souhaitée */
+}
+
+/* Align icons to the right only above 1000px */
+@media (min-width: 1000px) {
+    .social-icons {
+        margin-left: auto;
+    }
+}
+
+/* Hide icons and show hamburger below 1000px */
+@media (max-width: 1000px) {
+    .social-icons {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    outline: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #313131;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+/* Section Container */
+.section-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333366;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Profile Section */
+/* Profil Section Container */
+.section-container {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Title */
+.section-container h2 {
+    font-size: 1.8em;
+    color: #333366;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Profile Content Layout */
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Content */
+.text-content {
+    max-width: 600px;
+}
+
+/* Welcome Message */
+.welcome-message {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333366;
+}
+
+/* Approach List Styling */
+.approach-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.approach-list li {
+    background-color: #f5f8fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.approach-list li i {
+    color: #333366;
+    font-size: 1.2em;
+}
+
+.approach-list li strong {
+    color: #000000;
+}
+
+.approach-list li:hover {
+    background-color: #e0e4e8;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.approach-list, .expertise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.approach-list li, .expertise-list li {
+    background-color: #f5f8fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.approach-list li i, .expertise-list li i {
+    color: #000000;
+    margin-right: 10px;
+}
+
+/* Contact Section */
+.section-container p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Responsive Design for Profile */
+@media (max-width: 600px) {
+    .profil-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile Menu and Hamburger Toggle */
+@media (max-width: 1000px) {
+    /* Display Hamburger, Hide nav-links and social icons */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links, .social-icons {
+        display: none;
+    }
+
+    /* Mobile Menu Styling */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: calc(100% - 40px);
+        max-width: 300px;
+    }
+
+    /* Show mobile menu when .show class is added */
+    .mobile-menu.show {
+        display: block;
+    }
+
+    /* Mobile Nav Links */
+    .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mobile-nav-links a {
+        text-decoration: none;
+        color: #313131;
+        font-weight: bold;
+    }
+
+    /* Mobile Social Icons */
+    .mobile-social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+/* Masquer mobile-nav-links et mobile-social-icons au-dessus de 1000px */
+@media (min-width: 1000px) {
+    .mobile-nav-links, .mobile-social-icons {
+        display: none;
+    }
+}
+
+/* Style for icons in mobile menu to be black */
+.mobile-social-icons a {
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.mobile-social-icons a:hover {
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    gap: 20px; /* Espacement entre les éléments */
+    align-items: center; /* Aligne verticalement au centre */
+    text-align: center; /* Centre le texte dans chaque élément */
+}
+
+.contact-info p {
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+.contact-button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f5f5f5; /* Couleur de fond discrète */
+    color: #333; /* Couleur de texte */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #dcdcdc; /* Changer la couleur de fond au survol */
+    color: #000; /* Changer la couleur du texte au survol */
+  }
